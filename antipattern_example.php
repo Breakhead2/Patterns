@@ -15,7 +15,7 @@ function sendMail($name, $email, $order, $phone)
     $mail->Username = $myEmail;
     $mail->Password = $pass;
 
-    $mail->setFrom($myEmail, 'Lider Poiska');
+    $mail->setFrom($myEmail, 'LiderPoiska');
     $mail->addAddress($email, $name);
 
     $mail->CharSet = 'UTF-8';
