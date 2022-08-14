@@ -1,4 +1,4 @@
-// Пример антипатерна Hard Code
+// Пример антипаттерна Hard Code
 
 function sendMail($name, $email, $order, $phone)
 {
@@ -27,7 +27,7 @@ function sendMail($name, $email, $order, $phone)
     }
 }
 
-// Пример антипатерна магические числа
+// Пример антипаттерна магические числа
 
 // решение указать разрешение окна и кол-во товаров в отдельные переменные,
 так как данные значения могут измениться и повторно используются в другой функции
@@ -48,7 +48,7 @@ function getCatalog($category, $windowWidth, $page = 0){
         }
 }
 
-// Пример антипатерна Singletonitis и Приватизации
+// Пример антипаттерна Singletonitis и Приватизации
 
 class Db
 {
@@ -71,7 +71,7 @@ class Db
     {
         if(is_null($this->connection))
         {
-            $this->connection = new \PDO($this->prepateDnsString(), // с помощью \ мы попадаем в глобальное пространство имен
+            $this->connection = new \PDO($this->prepateDnsString(),
                 $this->config['user'],
                 $this->config['pass']
             );
@@ -81,7 +81,7 @@ class Db
     }
 
     private function prepateDnsString(){
-        return sprintf("%s:host=%s;dbname=%s;charset=%s", //вместо %s вставляются данные по порядку
+        return sprintf("%s:host=%s;dbname=%s;charset=%s",
             $this->config['driver'],
             $this->config['host'],
             $this->config['dbname'],
