@@ -1,6 +1,6 @@
 <?php
 
-use factories\MySQLFactory;
+use factories\{MySQLFactory, OracleFactory, PostgreSQLFactory};
 use interfaces\DBFactoryInterface;
 
 include "Autoload.php";
@@ -10,8 +10,8 @@ spl_autoload_register([new Autoload(), 'loadClass']);
 class DB{
 
     public $connection;
-    protected $record;
-    protected $builder;
+    public $record;
+    public $builder;
 
     public function __construct(DBFactoryInterface $db)
     {
@@ -22,4 +22,8 @@ class DB{
 
 }
 
-$db = new DB(new MySQLFactory());
+$mySqlDB = new DB(new MySQLFactory());
+
+$mySqlDB->connection->link();
+$mySqlDB->record->save();
+$mySqlDB->builder->select();
