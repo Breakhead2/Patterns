@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\PostgreSQL;
+namespace modules\PostgreSQL;
 
-use db\interfaces\RecordInterface;
+use interfaces\RecordInterface;
 
 class PostgreSQLRecord implements RecordInterface
 {

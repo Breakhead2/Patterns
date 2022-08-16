@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\PostgreSQL;
+namespace modules\PostgreSQL;
 
-use db\interfaces\ConnectInterface;
+use interfaces\ConnectInterface;
 
 class PostgreSQLConnect implements ConnectInterface
 {

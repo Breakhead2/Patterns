@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\Oracle;
+namespace modules\Oracle;
 
-use db\interfaces\ConnectInterface;
+use interfaces\ConnectInterface;
 
 class OracleConnect implements ConnectInterface
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\MySQL;
+namespace modules\MySQL;
 
-use db\interfaces\BuilderInterface;
+use interfaces\BuilderInterface;
 
 class MySQLQueryBuilder implements BuilderInterface
 {

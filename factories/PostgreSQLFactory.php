@@ -1,9 +1,9 @@
 <?php
 
-namespace db\Factories;
+namespace factories;
 
-use db\interfaces\{DBFactoryInterface, ConnectInterface, RecordInterface, BuilderInterface};
-use db\modules\PostgreSQL\{PostgreSQLConnect, PostgreSQLRecord, PostgreSQLBuilder};
+use interfaces\{DBFactoryInterface, ConnectInterface, RecordInterface, BuilderInterface};
+use modules\PostgreSQL\{PostgreSQLConnect, PostgreSQLRecord, PostgreSQLBuilder};
 
 class PostgreSQLFactory implements DBFactoryInterface
 {

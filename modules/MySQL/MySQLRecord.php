@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\MySQL;
+namespace modules\MySQL;
 
-use db\interfaces\RecordInterface;
+use interfaces\RecordInterface;
 
 class MySQLRecord implements RecordInterface
 {

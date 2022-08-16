@@ -1,9 +1,9 @@
 <?php
 
-namespace db\Factories;
+namespace factories;
 
-use db\interfaces\{DBFactoryInterface, ConnectInterface, RecordInterface, BuilderInterface};
-use db\modules\Oracle\{OracleConnect, OracleRecord, OracleBuilder};
+use interfaces\{DBFactoryInterface, ConnectInterface, RecordInterface, BuilderInterface};
+use modules\Oracle\{OracleConnect, OracleRecord, OracleBuilder};
 
 class OracleFactory implements DBFactoryInterface
 {

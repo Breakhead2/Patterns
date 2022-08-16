@@ -1,9 +1,9 @@
 <?php
 
-namespace db\Factories;
+namespace factories;
 
-use db\interfaces\{DBFactoryInterface, ConnectInterface, RecordInterface, BuilderInterface};
-use db\modules\MySQL\{MySQLConnect, MySQLRecord, MySQLQueryBuilder};
+use interfaces\{DBFactoryInterface, ConnectInterface, RecordInterface, BuilderInterface};
+use modules\MySQL\{MySQLConnect, MySQLRecord, MySQLQueryBuilder};
 
 class MySQLFactory implements DBFactoryInterface
 {

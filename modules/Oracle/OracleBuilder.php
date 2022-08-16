@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\Oracle;
+namespace modules\Oracle;
 
-use db\interfaces\BuilderInterface;
+use interfaces\BuilderInterface;
 
 class OracleBuilder implements BuilderInterface
 {

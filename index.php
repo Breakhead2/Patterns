@@ -1,15 +1,17 @@
 <?php
 
-use db\interfaces\DBFactoryInterface;
-use db\Factories\{MySQLFactory, OracleFactory, PostgreSQLFactory};
+use factories\MySQLFactory;
+use interfaces\DBFactoryInterface;
 
+include "Autoload.php";
+
+spl_autoload_register([new Autoload(), 'loadClass']);
 
 class DB{
 
     public $connection;
     protected $record;
     protected $builder;
-
 
     public function __construct(DBFactoryInterface $db)
     {

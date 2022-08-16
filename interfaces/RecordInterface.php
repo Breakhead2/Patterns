@@ -1,6 +1,6 @@
 <?php
 
-namespace db\interfaces;
+namespace interfaces;
 
 interface RecordInterface
 {

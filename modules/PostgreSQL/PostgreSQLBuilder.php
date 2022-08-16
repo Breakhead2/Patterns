@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\PostgreSQL;
+namespace modules\PostgreSQL;
 
-use db\interfaces\BuilderInterface;
+use interfaces\BuilderInterface;
 
 class PostgreSQLBuilder implements BuilderInterface
 {

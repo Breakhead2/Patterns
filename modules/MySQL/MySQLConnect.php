@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\MySQL;
+namespace modules\MySQL;
 
-use db\interfaces\ConnectInterface;
+use interfaces\ConnectInterface;
 
 class MySQLConnect implements ConnectInterface
 {

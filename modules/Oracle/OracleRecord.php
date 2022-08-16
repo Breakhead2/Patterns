@@ -1,8 +1,8 @@
 <?php
 
-namespace db\modules\Oracle;
+namespace modules\Oracle;
 
-use db\interfaces\RecordInterface;
+use interfaces\RecordInterface;
 
 class OracleRecord implements RecordInterface
 {
