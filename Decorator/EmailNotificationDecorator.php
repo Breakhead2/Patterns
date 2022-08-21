@@ -13,9 +13,10 @@ class EmailNotificationDecorator implements NotificationInterface
         $this->email = $email;
     }
 
-    public function sendNotification($text)
+    public function sendNotification(string $text)
 
     {
+        mail($this->email, "Уведомление", $text);
         echo "Уведомление с текстом $text отправлено по Email: $this->email" . "<br>";
         $this->sms->sendNotification($text);
     }

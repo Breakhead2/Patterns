@@ -4,5 +4,5 @@ namespace Decorator;
 
 interface NotificationInterface
 {
-    public function sendNotification($text);
+    public function sendNotification(string $text);
 }

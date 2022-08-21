@@ -11,7 +11,7 @@ class ChromeNotificationDecorator implements NotificationInterface
         $this->sms = $sms;
     }
 
-    public function sendNotification($text)
+    public function sendNotification(string $text)
 
     {
         echo "Уведомление с текстом $text отправлено через Chrome" . "<br>";
