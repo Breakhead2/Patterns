@@ -9,9 +9,11 @@ spl_autoload_register([new Autoload(), 'loadClass']);
 $resource = new Resource();
 $applicant = new Applicant("Denis", "test@test.test", 2);
 
-//$resource->attach($applicant);
+$resource->attach($applicant);
 //$resource->createVacancy("новая");
 
 //========================================================================================
 
-(new Shop())->choosePayment(new YandexPayment(),1200, "222-55-33");
+//(new Shop())->choosePayment(new YandexPayment(),1200, "222-55-33");
+
+//========================================================================================
