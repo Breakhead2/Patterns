@@ -2,21 +2,19 @@
 
 namespace Command;
 
-class MacrosoftWorld implements ICommand
+
+use Command\Interfaces\Command;
+
+class MacrosoftWorld
 {
-
-    public function copy($from, $to)
-    {
-        // TODO: Implement copy() method.
+    public function editText(Command $command){
+        $command->execute();
+        $this->log($command);
     }
 
-    public function past()
-    {
-        // TODO: Implement past() method.
+    protected function log($command){
+        $file = fopen("log.txt", "a+");
+        fputs($file,  $command->commandName . "\r\n");
     }
 
-    public function cut()
-    {
-        // TODO: Implement cut() method.
-    }
 }
