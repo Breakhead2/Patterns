@@ -2,23 +2,20 @@
 
 namespace Decorator;
 
-class EmailNotificationDecorator implements NotificationInterface
+class EmailNotificationDecorator extends Decorator
 {
-    protected $sms;
     protected $email;
+    protected NotificationInterface $type;
 
-    public function __construct(NotificationInterface $sms , $email)
-    {
-        $this->sms = $sms;
+    public function setEmail($email){
         $this->email = $email;
     }
 
     public function sendNotification(string $text)
-
     {
         mail($this->email, "Уведомление", $text);
         echo "Уведомление с текстом $text отправлено по Email: $this->email" . "<br>";
-        $this->sms->sendNotification($text);
+        $this->type->sendNotification($text);
     }
 
 }

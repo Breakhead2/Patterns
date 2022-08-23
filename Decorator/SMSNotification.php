@@ -2,9 +2,8 @@
 
 namespace Decorator;
 
-class SMSNotification implements NotificationInterface
+class SMSNotification extends Decorator
 {
-
     public function sendNotification(string $text)
     {
         echo "Уведомление с текстом $text отправлено по СМС"  . "<br>";
